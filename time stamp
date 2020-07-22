@@ -36,3 +36,14 @@ $cenvertedTime = date('Y-m-d H:i:s',strtotime('+1 hour +30 minutes +45 seconds',
   // months, seconds and hours and divide the  
   // resultant date into total seconds i.e. 60 
   $minutes = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24 - $days*60*60*24 - $hours*60*60)/ 60);
+  
+  
+  
+  
+  
+  
+  //Calculate UNIX TIMESTAMP for full month name of selected month
+  $rep_year = 2020;
+  $rep_month = 06;
+  echo $monthFull = date('F',mktime(0, 0, 0, $rep_month, 1, $rep_year));
+  echo date('F', mktime(0, 0, 0, 0, 0, 2013));
