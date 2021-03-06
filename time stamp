@@ -60,7 +60,8 @@ $time = date('h:i:s A', $mkdate);
 $dt = new DateTime($date); echo $dt->format('l, M, d, Y').' '.$time; 
 
 
-
+$dt = new DateTime('now', new DateTimezone('Asia/Dhaka'));
+echo $dt->format('F j, Y, g:i a');
 
 
 
